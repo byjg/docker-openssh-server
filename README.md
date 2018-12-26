@@ -2,7 +2,7 @@
 
 This image runs a Simple OpenSSH Server.
 
-## Command Line
+# Command Line
 
 ```bash
 docker run \
@@ -13,7 +13,7 @@ docker run \
    -d byjg/openssh-server
 ```
 
-## Docker Compose
+# Docker Compose
 
 ```yaml
 version: '3.4'
