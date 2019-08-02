@@ -42,4 +42,11 @@ docker run \
    -d byjg/openssh-server
 ```
 
+# Accessing the container
 
+Because security purposes the user `root` is not allowed to login. Instead you have
+to login with the user `user`
+
+```bash
+ssh -p 2222 user@<CONTAINER IP>
+```

@@ -6,7 +6,7 @@ then
     exit 1
 fi
 
-HOME_SSH=/root/.ssh
+HOME_SSH=/home/user/.ssh
 
 mkdir -p "$HOME_SSH"
 
@@ -20,6 +20,8 @@ do
 done
 
 chmod 400 ${HOME_SSH}/authorized_keys
+
+chown -R user:user ${HOME_SSH}
 
 /usr/bin/ssh-keygen -A
 /usr/sbin/sshd -D -E /proc/1/fd/1
