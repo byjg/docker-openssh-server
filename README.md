@@ -1,6 +1,6 @@
 # Docker OpenSSH Server Image
 
-This image runs a Simple OpenSSH Server.
+This image runs a Simple OpenSSH Server. You can use it as a Bastion server. 
 
 # Command Line
 
